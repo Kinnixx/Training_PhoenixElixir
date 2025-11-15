@@ -18,7 +18,7 @@ defmodule HelloPhoenixWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/bonjour", PageController, :bonjour
+    live "/story", StoryLive
   end
 
   # Other scopes may use custom stacks.
